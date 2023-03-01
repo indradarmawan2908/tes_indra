@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "7900cc8d-32ee-423f-99eb-6b3c4a108a0c",
+		"name": "Test Indra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16036379"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/lowongan/store/?deskripsi=loker update&pendidikan=SMA&tanggal_dibuka=29-08-2022&tanggal_ditutup=01-09-2022&kuota=10",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lowongan",
+						"store",
+						""
+					],
+					"query": [
+						{
+							"key": "deskripsi",
+							"value": "loker update"
+						},
+						{
+							"key": "pendidikan",
+							"value": "SMA"
+						},
+						{
+							"key": "tanggal_dibuka",
+							"value": "29-08-2022"
+						},
+						{
+							"key": "tanggal_ditutup",
+							"value": "01-09-2022"
+						},
+						{
+							"key": "kuota",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/lowongan/store/?deskripsi=loker update&pendidikan=SMA&tanggal_dibuka=2022-08-08&tanggal_ditutup=2022-08-12&kuota=10",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lowongan",
+								"store",
+								""
+							],
+							"query": [
+								{
+									"key": "deskripsi",
+									"value": "loker update"
+								},
+								{
+									"key": "pendidikan",
+									"value": "SMA"
+								},
+								{
+									"key": "tanggal_dibuka",
+									"value": "2022-08-08"
+								},
+								{
+									"key": "tanggal_ditutup",
+									"value": "2022-08-12"
+								},
+								{
+									"key": "kuota",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 08:31:14 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 08:31:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.30"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Sukses\",\n    \"data\": {\n        \"deskripsi\": \"loker update\",\n        \"pendidikan\": \"SMA\",\n        \"tanggal_dibuka\": \"2022-08-08\",\n        \"tanggal_ditutup\": \"2022-08-12\",\n        \"kuota\": \"10\",\n        \"updated_at\": \"2023-03-01 15:31:14\",\n        \"created_at\": \"2023-03-01 15:31:14\",\n        \"id\": 2\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/lowongan/update?id=1&pendidikan=S-1&tanggal_dibuka=2022-08-01&tanggal_ditutup=2022-08-10&kuota=10&deskripsi=1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lowongan",
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "pendidikan",
+							"value": "S-1"
+						},
+						{
+							"key": "tanggal_dibuka",
+							"value": "2022-08-01"
+						},
+						{
+							"key": "tanggal_ditutup",
+							"value": "2022-08-10"
+						},
+						{
+							"key": "kuota",
+							"value": "10"
+						},
+						{
+							"key": "deskripsi",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/lowongan/update?id=2&pendidikan=S-1&tanggal_dibuka=2022-08-01&tanggal_ditutup=2022-08-10&kuota=10&deskripsi=baru dibuka",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"lowongan",
+								"update"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								},
+								{
+									"key": "pendidikan",
+									"value": "S-1"
+								},
+								{
+									"key": "tanggal_dibuka",
+									"value": "2022-08-01"
+								},
+								{
+									"key": "tanggal_ditutup",
+									"value": "2022-08-10"
+								},
+								{
+									"key": "kuota",
+									"value": "10"
+								},
+								{
+									"key": "deskripsi",
+									"value": "baru dibuka"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 08:31:41 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 01 Mar 2023 08:31:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.30"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Success !! Data Berhasil Di Update!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/lowongan/ 1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"lowongan",
+						" 1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "10|Y7ChKko5x5yNNcOYx6OCVTiZ42EbJEZptemuQepQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "budi123",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8000/api/register",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
